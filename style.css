@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease-in;
+    outline: none;
+    font-size: cursive;
+    user-select: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-player {
+    width: 400px;
+    height: 550px;
+    background: white;
+    border-radius: 0 15px 15px 0;
+    box-shadow:  5px 2px 10px rgb(0 0 0 / 10%) inset, -4px -9px 13px 5px #959595 inset, 15px 15px 10px rgb(0 0 0 / 10%), 10px 15px 15px rgb(0 0 0 /25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+    position: relative;
+    z-index: 1;
+    perspective: 100px
+}
+
+.artist {
+    width: 80%;
+    height: 440px;
+/*    background: url(https://tntmusic.ru/media/content/article@2x/2019-06-25_01-28-54__988d991c-96e8-11e9-beaf-571044895d47.jpg);*/
+    background-position: center center !important;
+    background-size: cover !important;
+}
+
+.player-top {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-top > input {
+    width: 70%;
+}
+
+
+marquee {
+    width: 80%;
+    font-size: 25px;
+    color: #294c69;
+}
+
+.play-bar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: steelblue;
+    padding: 20px
+}
+
+.play-bar > i {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.play-bar > i:hover {
+    color: gold;
+}
+
+.volume-bar {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.playlist {
+    width: 25%;
+    height: 100%;
+    background: steelblue;
+    position: absolute;
+    top: 0;
+    left: -25%;
+    border-radius: 10px 0 0 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    box-shadow:  -5px 3px 10px rgb(0 0 0 / 35%) inset, -4px -9px 13px 5px #95959500 inset, -17px 14px 10px rgb(0 0 0 / 10%), -19px 8px 15px rgb(0 0 0 /46%);
+    transform-style: preserve-3d;
+    transform-origin: right;
+    transform: rotateY(-70deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.album {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: none;
+    width: 100%;
+}
+
+.album > h3 {
+    color: gold;
+}
+
+.album > h4 {
+    color: white;
+}
+
+.album:hover {
+    background: rgba(0,0,0,0.2)
+}
+
+.bars {
+    position: absolute;
+    top: 27px;
+    left: 20px;
+    font-size: 20px !important;
+    color: steelblue;
+    cursor: pointer
+}
+
+.playlist-open {
+    transform: rotateY(0deg);
+}
+
+.player-position {
+    margin-left: 11%;
+}
+
+.playlist-card {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    transition: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
